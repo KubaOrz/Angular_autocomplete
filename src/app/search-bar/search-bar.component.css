@@ -1,0 +1,20 @@
+.main {
+    margin: auto ;
+    width: 50%;
+    text-align: center;
+    background-color: aquamarine;
+    padding-top: 50px;
+}
+
+.autocomplete {
+    margin: auto;
+    width: 350px;
+    background-color: white;
+    border: 0px;
+    border-bottom: 1px solid #767576;
+    text-align: left;
+}
+
+.autocomplete:hover {
+    background-color: darkgrey;
+}

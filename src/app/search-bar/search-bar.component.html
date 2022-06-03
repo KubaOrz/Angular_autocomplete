@@ -1,0 +1,15 @@
+<h1 class = "main">Wyszukiwarka</h1>
+
+<form>
+    <div class = "main">
+        <input type = "text" name = "search" [(ngModel)] = "searchText" style = "width: 300px;" autocomplete="off">
+        <input type = "submit" (click) = "search()" style = "width: 75px;" value = "search">
+    </div>
+    <div *ngIf = "searchText.length > 0">
+        <div class = "autocomplete" *ngFor = "let item of keyWords | filter:searchText">
+            <button class = "autocomplete" type = "button" (click) = "getText(item.name)">{{item.name}}</button>
+        </div>
+    </div>
+</form>
+
+
